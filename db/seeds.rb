@@ -29,13 +29,13 @@ characters = [
 characters.each {|character| Character.create(character)}
 
 
-user_guides = [
+userguides = [
   {character_id: 1, user_id: 1, title: "Hasibul Guide", content: "jhasrjhaskhdkashdkjahsdkjhasdkjhasjkdhaskjdasjkhdajshdkjahsdkjhaskjdhakjshdkjahsdkjhajksdh", guide_image: "https://ca.slack-edge.com/T02MD9XTF-U01CRNE8X3M-0cc327fd8ec0-512", likes: 0},
   {character_id: 3, user_id: 1, title: "Greg Guide", content: "abc.jbv s.kdjv/sjdvb/skjvb/sJBF'euwi weu'ew[;,LDJHyudoerpguergpuergpwugpg,lfywefup   efwp    ewgiuwefgiufjshdvlshdvldS", guide_image: "https://ca.slack-edge.com/T02MD9XTF-U8H2RA3C1-643c8ce562ef-512", likes: 0},
   {character_id: 2, user_id: 3,title: "Michelle Guide", content: "456sdjahskdjhaksjdhakjshdkjahskdjhaskjdhkajshdkjahsdjkhaskjdhkashdkjahsdkjashdkjhaksdhjakjshdajkahskdha", guide_image: "https://ca.slack-edge.com/T02MD9XTF-U011WKXUXTK-5ce7733b96e2-512", likes:0}
 ]
 
-user_guides.each {|guide| UserGuide.create(guide)}
+userguides.each {|guide| UserGuide.create(guide)}
 
 
 
