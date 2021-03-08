@@ -17,7 +17,7 @@ class UserGuidesController < ApplicationController
 
     def update
         user_guide = UserGuide.find(params[:id])
-        user_guide.update(params.permit(:character_id, :user_id, :guide_image, :content, :title))
+        user_guide.update(params.permit(:character_id, :user_id, :guide_image, :content, :title, :likes))
         render json: user_guide
 
     end 

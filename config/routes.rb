@@ -2,9 +2,12 @@ Rails.application.routes.draw do
 
  get '/guides', to: "user_guides#index"
  get '/characters', to: "characters#index"
+ get '/users', to: "users#index"
  
  get '/guides/:id', to: "user_guides#show"
  get '/characters/:id', to: "characters#show"
+ get '/me', to: "users#show"
+
 
  get '/login', to: "users#login"
 
@@ -12,6 +15,7 @@ Rails.application.routes.draw do
 
  delete '/guides/:id', to: "user_guides#destroy"
 
+ 
  post "/guides", to: "user_guides#create"
  
 end
